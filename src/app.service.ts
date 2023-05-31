@@ -9,7 +9,7 @@ export class BlobStorageService {
    private readonly blobServiceClient: BlobServiceClient;
 
   constructor() {
-    this.blobServiceClient = BlobServiceClient.fromConnectionString("DefaultEndpointsProtocol=https;AccountName=venkat123;AccountKey=r0bZDd06RubXCCHtXCSmAdpFERcS1kOLfQSYb0KGGGgdQNRr25L132fS9qbo2NGFL/GdLuwyWiSn+AStm9symA==;EndpointSuffix=core.windows.net");
+    this.blobServiceClient = BlobServiceClient.fromConnectionString("Your-connection-string");
   }
 
   async downloadFileAsZip(containerName: string, fileName: string): Promise<Readable> {
